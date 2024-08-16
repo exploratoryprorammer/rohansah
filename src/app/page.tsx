@@ -82,7 +82,7 @@ export default async function Home() {
                   <EnvelopeClosedIcon className="h-4 w-4" />
                 </Button>
               </Link>
-              <Link href="/assets/resume.pdf" target="_blank" rel="noopener noreferrer">
+              <Link href="/assets/ROHANRESUME.pdf" target="_blank" rel="noopener noreferrer">
                 <Button variant="secondary" size="icon">
                   <FileTextIcon className="h-4 w-4" /> 
                 </Button>
