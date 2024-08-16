@@ -13,14 +13,6 @@
         {
           "label": "Education",
           "path": "#education"
-        },
-        {
-          "label": "Testimonials",
-          "path": "#testimonials"
-        },
-        {
-          "label": "Blogs",
-          "path": "#blogs"
         }
       ]
     },
@@ -35,105 +27,113 @@
     }
   },
   "personalInfo": {
-    "name": "Arif Hossain",
+    "name": "Rohan Sah",
     "title": "Full Stack Developer",
-    "location": "Dhaka, Bangladesh",
+    "location": "Ames, Iowa",
     "bio": "I am a passionate full-stack developer with a strong background in building modern, scalable web applications. Lets collaborate andbring your ideas to life."
   },
   "contactInfo": {
-    "email": "devarifhossain@gmail.com",
-    "phone": "123-456-7890",
-    "linkedin": "https://www.linkedin.com/in/ariflogs/",
-    "github": "https://github.com/ariflogs",
+    "email": "rksah@iastate.edu",
+    "phone": "650-271-9163",
+    "linkedin": "https://www.linkedin.com/in/rohan-sah/",
+    "github": "https://github.com/exploratoryprorammer/",
     "twitter": "https://twitter.com/ariflogs",
     "website": "https://johndoe.dev"
   },
   "skills": {
-    "languages": ["JavaScript", "Python", "Java", "C++"],
-    "frameworks": ["React", "Node.js", "Express", "Django", "Spring Boot"],
-    "databases": ["MySQL", "MongoDB", "PostgreSQL"],
-    "tools": ["Git", "Docker", "Kubernetes", "Jenkins", "AWS", "GCP"]
+    "languages": ["Java", "Python", "Swift", "JavaScript", "HTML/CSS", "C++", "SQL"],
+    "frameworks": ["React", "Node.js", "Next.js", "Express", "Django", "Spring", "Spring Boot", "Tailwind"],
+    "databases": ["MySQL", "MongoDB", "PostgreSQL", "Firebase"],
+    "tools": ["Git", "Github", "Docker", "Postman", "Jenkins", "AWS", "Vercel", "Agile Methodologies"]
   },
   "projects": [
     {
       "id": "1",
-      "title": "Makers Tracker",
-      "description": "A project goal tracking tool for professionals. It let's you create project, assign goals and generate analytics to track progress",
-      "technologies": ["Typescript", "Next.js", "TailwindCSS", "MySQL"],
-      "live_url": "https://makerstracker.com",
-      "code_repo_url": "https://makerstracker.com",
-      "cover": "/assets/project_1.jpeg"
+      "title": "NEOs tracker",
+      "description": "Developed web app to provide NASA-backed data on real-time asteroids that threaten Earth equipped with a personal A.I. chatbot to enhance user experience.",
+      "technologies": ["React", "Next.js", "Llama 3.1", "NASA API","AWS EC2","RAG", "Pinecone"],
+      "live_url": "https://neos.vercel.app",
+      "code_repo_url": "https://github.com/exploratoryprorammer/neo",
+      "cover": "/assets/comet-asteroid-meteorite-falls-ground-600nw-1246646749.webp"
+      
     },
     {
       "id": "2",
-      "title": "Pricing Bees",
-      "description": "A no-code pricing page builder. Build professional-looking pricing pages, customize looks, and get detailed analytics to optimize your pricing strategy.",
-      "technologies": ["Typescript", "Next.js", "Shadcn/ui", "Convex"],
-      "live_url": "https://pricingbees.com",
-      "code_repo_url": "https://pricingbees.com",
-      "cover": "/assets/project_2.jpeg"
-    },
-    {
-      "id": "3",
-      "title": "Indie Hustles",
-      "description": "A listing site for Indie hackers to promote their products",
-      "technologies": ["Typescript", "Next.js", "TailwindCSS", "Airtable"],
-      "live_url": "https://indiehustles.com",
-      "code_repo_url": "https://indiehustles.com",
-      "cover": "/assets/project_3.jpeg"
+      "title": "SmartPantry",
+      "description": "Developed an item inventory with an AI image classification feature through Google Gemini Vision API and Firebase storage.",
+      "technologies": ["Next.js", "React", "Firebase", "Google Gemini Vision API", "CI/CD", "MaterialUI" ],
+      "live_url": "https://smart-pantry-chi.vercel.app",
+      "code_repo_url": "https://github.com/exploratoryprorammer/SmartPantry",
+      "cover": "/assets/adobestock-vikivector.jpg"
     }
   ],
   "workExperience": [
     {
       "id": "1",
-      "company": "Tech Corp",
+      "company": "Indu Sah Foundation",
       "companyWebsite": "https://example.com",
-      "role": "Senior Full Stack Developer",
-      "startDate": "Jan 2020",
+      "role": "Founding Software Engineer",
+      "startDate": "July 2024",
       "endDate": "Present",
-      "technologies": ["Socket.io", "Node.js", "Express", "React"],
+      "technologies": ["Spring", "MongoDB", "React", "Tailwind CSS","Postman","Docker"],
       "keyResponsibilities": [
-        "Led a team of developers to create scalable web applications.",
-        "Implemented RESTful and GraphQL APIs using Node.js and Express.",
-        "Developed front-end applications using React and Next.js.",
-        "Integrated third-party services and APIs to enhance application functionality.",
-        "Mentored junior developers and conducted code reviews."
+        "Developed the entire official Indu Sah Foundation website leveraging modern design tools; recived a 100% approval rate from board of directors",
+        "As a leading humanitarian organization in Nepal, our website hosts 60,000+ total views to date and averages 2,000+ monthly views."
       ]
     },
     {
       "id": "2",
-      "company": "Web Solutions",
+      "company": "Headstarter A.I",
       "companyWebsite": "https://example.com",
-      "role": "Full Stack Developer",
-      "startDate": "Jun 2017",
-      "endDate": "Dec 2019",
+      "role": "Software Engineering Fellow",
+      "startDate": "July 2024",
+      "endDate": "September 2024",
+      "technologies": ["React", "Next.js", "OpenAI", "Pinecone","StripeAPI","Firebase","AWS","Supabase"],
+      "keyResponsibilities": [
+        "Build 5+ A.I. apps and APIs using React.js, Next.js, OpenAI, Pinecone, StripeAPI, Firebase, and AWS with at least 98% accuracy to be seen by 1000 users.",
+        "Developed full-stack A.I. projects from design to deployment, leading 4+ engineering fellows using MVC patterns.",
+        "Mentored by Amazon, Bloomberg, and Capital One engineers on Agile, CI/CD, Git, and microservices."
+      ]
+    },
+    {
+      "id": "3",
+      "company": "Iowa Legislature",
+      "companyWebsite": "https://example.com",
+      "role": "Data Science Intern",
+      "startDate": "July 2024",
+      "endDate": "Present",
       "technologies": ["MongoDB", "Express", "React", "Node.js"],
       "keyResponsibilities": [
-        "Designed and developed web applications using JavaScript and React.",
-        "Built and maintained server-side APIs with Node.js and Express.",
-        "Collaborated with cross-functional teams to deliver high-quality products.",
-        "Ensured applications are responsive and performant.",
-        "Participated in Agile ceremonies and contributed to project planning."
+        "Enhanced historical voting data retrieval time efficiency by 90% by developing a PDF data mining software with 100% accuracy utilizing Google App Script & JavaScript.",
+        "Lead the development of an Iowa historic voter geospatial information visualization software detailing 146k+ votes utilizing QGIS and Python."
+      ]
+    },
+    {
+      "id": "4",
+      "company": "Gladiators NYC",
+      "companyWebsite": "https://example.com",
+      "role": "Data Science Intern",
+      "startDate": "June 2024",
+      "endDate": "July 2024",
+      "technologies": ["MongoDB", "Express", "React", "Node.js"],
+      "keyResponsibilities": [
+        "Enhanced historical voting data retrieval time efficiency by 90% by developing a PDF data mining software with 100% accuracy utilizing Google App Script & JavaScript.",
+        "Lead the development of an Iowa historic voter geospatial information visualization software detailing 146k+ votes utilizing QGIS and Python."
       ]
     }
   ],
   "education": [
     {
       "id": "1",
-      "institution": "Coursera",
-      "degree": "Full Stack Web Development with React",
-      "description": "Completed a Coursera specialization that focused on building full-stack web applications using React, Node.js, Express, and MongoDB. Learned best practices for designing and implementing responsive, scalable, and secure web applications.",
-      "startDate": "Sep 2013",
-      "endDate": "May 2017"
-    },
-    {
-      "id": "2",
-      "institution": "University of California, Berkeley",
-      "degree": "Bachelor of Science in Computer Science",
-      "description": "Completed a comprehensive curriculum in computer science, including courses in data structures, algorithms, software engineering, and artificial intelligence. Worked on several projects, including a web application for managing student organizations and a mobile app for tracking fitness activities.",
-      "startDate": "Sep 2013",
-      "endDate": "May 2017"
+      "institution": "Iowa State University",
+      "degree": "Bachelor of Science in Computer Science, Minor in Math",
+      "description": "Key Coursework - Python, Java, Data Structures, Algorithms, Computer Architecture",
+      "startDate": "August 2023",
+      "endDate": "May 2026"
+      
+
     }
+    
   ],
   "testimonials": [
     {

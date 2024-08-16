@@ -13,7 +13,7 @@ export default async function Navbar() {
       <div className="container max-w-5xl mx-auto flex h-18 items-center justify-between py-2 px-4 md:px-6">
         <Link href="/" className="flex items-center" prefetch={false}>
           <Image
-            src="/assets/logo.png"
+            src="/assets/RS.png"
             height={60}
             width={60}
             alt={"devfolio logo"}

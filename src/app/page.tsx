@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
@@ -17,9 +16,15 @@ import {
   LinkedInLogoIcon,
   TwitterLogoIcon,
   GlobeIcon,
+  FileTextIcon
+  
 } from "@radix-ui/react-icons";
 import { Avatar } from "@/components/ui/avatar";
 import Image from "next/image";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faJava, faPython, faSwift, faJs, faHtml5, faCss3, faCuttlefish, faGithub, faDocker, faGit } from '@fortawesome/free-brands-svg-icons';
+import { faDatabase, faCode, faToolbox, faCodeBranch } from '@fortawesome/free-solid-svg-icons';
+
 
 export default async function Home() {
   const data = await getJSONData();
@@ -35,7 +40,7 @@ export default async function Home() {
         <div className="flex flex-col lg:flex-row items-center justify-center gap-12">
           <div className="w-1/2 mx-auto lg:w-1/3">
             <Image
-              src="/assets/profile.jpg"
+              src="/assets/RohanSah.jpg"
               width={280}
               height={280}
               alt="Developer"
@@ -61,15 +66,6 @@ export default async function Home() {
                   <GitHubLogoIcon className="h-4 w-4" />
                 </Button>
               </Link>
-              <Link
-                target="_blank"
-                href={data.contactInfo.twitter}
-                prefetch={false}
-              >
-                <Button variant="secondary" size="icon">
-                  <TwitterLogoIcon className="h-4 w-4" />
-                </Button>
-              </Link>
 
               <Link
                 target="_blank"
@@ -86,10 +82,18 @@ export default async function Home() {
                   <EnvelopeClosedIcon className="h-4 w-4" />
                 </Button>
               </Link>
+              <Link href="/assets/resume.pdf" target="_blank" rel="noopener noreferrer">
+                <Button variant="secondary" size="icon">
+                  <FileTextIcon className="h-4 w-4" /> 
+                </Button>
+              </Link>
+
             </div>
           </div>
         </div>
+        ;
       </section>
+
 
       {/* Experience Section */}
       <section
@@ -124,6 +128,17 @@ export default async function Home() {
                     <li key={resp}>{resp}</li>
                   ))}
                 </ul>
+              </div>
+              {/* Skills/Technologies Badges */}
+              <div className="mt-2 flex flex-wrap gap-2">
+                {exp.technologies.map((tech) => (
+                  <span
+                    key={tech}
+                    className="inline-flex items-center px-3 py-1 text-sm font-medium text-white bg-blue-500 rounded-full"
+                  >
+                    {tech}
+                  </span>
+                ))}
               </div>
             </div>
           ))}
@@ -190,7 +205,62 @@ export default async function Home() {
               </div>
             </Card>
           ))}
+          <Card className="flex flex-col lg:flex-row">
+            <div className="w-full lg:w-1/3 p-2 flex items-center">
+              <Image
+                src="/assets/360_F_565320435_Q6evKbBxGefENJTfoMt0ZbGYgoiHVxsH.jpg" // Replace with actual image path
+                alt="New Project"
+                height={200}
+                width={300}
+                className="rounded-md object-cover"
+              />
+            </div>
+
+            <div className="w-full lg:w-2/3">
+              <CardHeader>
+                <CardTitle>TrailerZone</CardTitle>
+                <div className="flex flex-wrap gap-2">
+                  <Badge variant="secondary">React</Badge>
+                  <Badge variant="secondary">MaterialUI</Badge>
+                  <Badge variant="secondary">Spring</Badge>
+                  <Badge variant="secondary">MongoDB</Badge>
+                  <Badge variant="secondary">TMDB API</Badge>
+                  {/* Add more tech badges as needed */}
+                </div>
+              </CardHeader>
+              <CardContent>
+                <CardDescription>
+                  Developed webapp to showcase trending movie trailers with feature to read and write reviews
+                </CardDescription>
+              </CardContent>
+              <CardFooter>
+                <div className="flex space-x-3">
+                  <Link
+                    target="_blank"
+                    href="https://github.com/exploratoryprorammer/StreamingZoneFrontEnd"
+                    prefetch={false}
+                  >
+                    <Button size="sm" variant="outline">
+                      <GitHubLogoIcon className="h-3 w-3 mr-2" />
+                      Frontend Repository
+                    </Button>
+                  </Link>
+                  <Link
+                    target="_blank"
+                    href="https://github.com/exploratoryprorammer/StreamingZoneBackend"
+                    prefetch={false}
+                  >
+                    <Button size="sm" variant="outline">
+                      <GitHubLogoIcon className="h-3 w-3 mr-2" />
+                      Backend Repository
+                    </Button>
+                  </Link>
+                </div>
+              </CardFooter>
+            </div>
+          </Card>
         </div>
+
       </section>
 
       {/* Education Section */}
@@ -209,64 +279,7 @@ export default async function Home() {
               <div className="text-gray-500 dark:text-gray-400">
                 {ed.startDate} - {ed.endDate}
               </div>
-              <p className="mt-2 text-sm text-gray-500">{ed.description}</p>
             </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Testimonials Section */}
-      <section
-        id="testimonials"
-        className="container max-w-5xl mx-auto py-12 md:py-16 lg:py-20"
-      >
-        <h2 className="font-bold text-3xl md:text-5xl mb-12">Testimonials</h2>
-
-        <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
-          {data.testimonials.map((t) => (
-            <Card className="p-6 text-left" key={t.id}>
-              <blockquote className="font-medium lg:text-og">
-                &ldquo;{t.feedback}.&rdquo;
-              </blockquote>
-              <div className="mt-4 flex items-center gap-3">
-                <Avatar>
-                  <Image
-                    height={50}
-                    width={50}
-                    alt="testimonial avatar"
-                    src={t.avatar}
-                  />
-                </Avatar>
-                <div>
-                  <div className="font-semibold">{t.name}</div>
-                  <div className="text-sm text-gray-500 dark:text-gray-400">
-                    {t.title} @ {t.company}
-                  </div>
-                </div>
-              </div>
-            </Card>
-          ))}
-        </div>
-      </section>
-
-      {/* Blogs Section */}
-      <section
-        id="blogs"
-        className="container max-w-5xl mx-auto py-12 md:py-16 lg:py-20"
-      >
-        <h2 className="font-bold text-3xl md:text-5xl mb-12">Blogs</h2>
-
-        <div className="flex flex-col space-y-8">
-          {posts.map((post) => (
-            <Link key={post.slug} href={`/blogs/${post.slug}`}>
-              <h3 className="text-xl md:text-3xl font-semibold">
-                {post.title}
-              </h3>
-              <p className="md:text-lg font-light">{post.description}</p>
-              <p className="text-sm font-medium text-gray-500 mt-2">
-                Published at: {post.publishDate}
-              </p>
-            </Link>
           ))}
         </div>
       </section>
