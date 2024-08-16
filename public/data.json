@@ -112,13 +112,12 @@
       "id": "4",
       "company": "Gladiators NYC",
       "companyWebsite": "https://example.com",
-      "role": "Data Science Intern",
+      "role": "Technology Intern",
       "startDate": "June 2024",
       "endDate": "July 2024",
       "technologies": ["JavaScript", "Web-scraping", "Automation", "Google App Script", "Excel"],
       "keyResponsibilities": [
-        "Enhanced historical voting data retrieval time efficiency by 90% by developing a PDF data mining software with 100% accuracy utilizing Google App Script & JavaScript.",
-        "Lead the development of an Iowa historic voter geospatial information visualization software detailing 146k+ votes utilizing QGIS and Python."
+        "Utilized JavaScript and Excel to automate seamless data communication, notifying product availability and price and name differences impacting efficient transactions for 25k+ customers; received 100% executive approval rate,"
       ]
     }
   ],
