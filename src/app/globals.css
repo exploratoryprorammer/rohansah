@@ -6,9 +6,7 @@ html {
   scroll-behavior: smooth;
 }
 
-.small-icon {
-  font-size: 0.75rem; /* Adjust to your preferred size */
-}
+
 
 @layer base {
   :root {
