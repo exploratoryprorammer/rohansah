@@ -208,6 +208,52 @@ export default async function Home() {
           <Card className="flex flex-col lg:flex-row">
             <div className="w-full lg:w-1/3 p-2 flex items-center">
               <Image
+                src="/assets/datascrape.png" 
+                alt="New Project"
+                height={200}
+                width={300}
+                className="rounded-md object-cover"
+              />
+            </div>
+
+            <div className="w-full lg:w-2/3">
+              <CardHeader>
+                <CardTitle>Database retrieval augmented webscraper</CardTitle>
+                <div className="flex flex-wrap gap-2">
+                  <Badge variant="secondary">HTML/CSS/</Badge>
+                  <Badge variant="secondary">Javascript</Badge>
+                  <Badge variant="secondary">MongoDB</Badge>
+                  <Badge variant="secondary">Express</Badge>
+                  <Badge variant="secondary">Puppeteer</Badge>
+                  <Badge variant="secondary">BodyParser</Badge>
+
+                  {/* Add more tech badges as needed */}
+                </div>
+              </CardHeader>
+              <CardContent>
+                <CardDescription>
+                  Developed website scraper connected to a MongoDB database which retreives parsed puppeteer scraped data through BodyParser.
+                </CardDescription>
+              </CardContent>
+              <CardFooter>
+                <div className="flex space-x-3">
+                  <Link
+                    target="_blank"
+                    href="https://github.com/exploratoryprorammer/OLOSTEP-HACKATHON"
+                    prefetch={false}
+                  >
+                    <Button size="sm" variant="outline">
+                      <GitHubLogoIcon className="h-3 w-3 mr-2" />
+                      Github Repository
+                    </Button>
+                  </Link>
+                </div>
+              </CardFooter>
+            </div>
+          </Card>
+          <Card className="flex flex-col lg:flex-row">
+            <div className="w-full lg:w-1/3 p-2 flex items-center">
+              <Image
                 src="/assets/360_F_565320435_Q6evKbBxGefENJTfoMt0ZbGYgoiHVxsH.jpg" 
                 alt="New Project"
                 height={200}
@@ -259,52 +305,7 @@ export default async function Home() {
               </CardFooter>
             </div>
           </Card>
-          <Card className="flex flex-col lg:flex-row">
-            <div className="w-full lg:w-1/3 p-2 flex items-center">
-              <Image
-                src="/assets/datascrape.png" 
-                alt="New Project"
-                height={200}
-                width={300}
-                className="rounded-md object-cover"
-              />
-            </div>
-
-            <div className="w-full lg:w-2/3">
-              <CardHeader>
-                <CardTitle>Database retrieval augmented webscraper</CardTitle>
-                <div className="flex flex-wrap gap-2">
-                  <Badge variant="secondary">HTML/CSS/</Badge>
-                  <Badge variant="secondary">Javascript</Badge>
-                  <Badge variant="secondary">MongoDB</Badge>
-                  <Badge variant="secondary">Express</Badge>
-                  <Badge variant="secondary">Puppeteer</Badge>
-                  <Badge variant="secondary">BodyParser</Badge>
-
-                  {/* Add more tech badges as needed */}
-                </div>
-              </CardHeader>
-              <CardContent>
-                <CardDescription>
-                  Developed website scraper connected to a MongoDB database which retreives parsed puppeteer scraped data through BodyParser.
-                </CardDescription>
-              </CardContent>
-              <CardFooter>
-                <div className="flex space-x-3">
-                  <Link
-                    target="_blank"
-                    href="https://github.com/exploratoryprorammer/OLOSTEP-HACKATHON"
-                    prefetch={false}
-                  >
-                    <Button size="sm" variant="outline">
-                      <GitHubLogoIcon className="h-3 w-3 mr-2" />
-                      Github Repository
-                    </Button>
-                  </Link>
-                </div>
-              </CardFooter>
-            </div>
-          </Card>
+          
         </div>
 
       </section>
