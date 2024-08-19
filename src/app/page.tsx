@@ -16,7 +16,7 @@ import {
   LinkedInLogoIcon,
   TwitterLogoIcon,
   GlobeIcon,
-  FileTextIcon
+  FileTextIcon,
   
 } from "@radix-ui/react-icons";
 import { Avatar } from "@/components/ui/avatar";
@@ -24,6 +24,7 @@ import Image from "next/image";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faJava, faPython, faSwift, faJs, faHtml5, faCss3, faCuttlefish, faGithub, faDocker, faGit } from '@fortawesome/free-brands-svg-icons';
 import { faDatabase, faCode, faToolbox, faCodeBranch } from '@fortawesome/free-solid-svg-icons';
+import { VideoIcon } from "@radix-ui/react-icons";
 
 
 export default async function Home() {
@@ -245,6 +246,16 @@ export default async function Home() {
                     <Button size="sm" variant="outline">
                       <GitHubLogoIcon className="h-3 w-3 mr-2" />
                       Github Repository
+                    </Button>
+                  </Link>
+                  <Link
+                    target="_blank"
+                    href="https://www.youtube.com/watch?v=quwSMkApqiY&t=3s"
+                    prefetch={false}
+                  >
+                    <Button size="sm" variant="outline">
+                      <VideoIcon className="h-3 w-3 mr-2" />
+                      Youtube Demo
                     </Button>
                   </Link>
                 </div>
