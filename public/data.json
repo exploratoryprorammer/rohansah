@@ -52,8 +52,8 @@
       "title": "Memora",
       "description": "Developed a prompt-based AI Flashcards app leveraging llama 3.1, OpenAI, and NextJS; utilized clerk for user authentication and Stripe API for payment authentication.",
       "technologies": ["Next.js", "React", "Firebase", "Llama 3.1", "CI/CD", "MaterialUI", "OpenAI", "Clerk API", "StripeAPI"],
-      "live_url": "https://memora-nu.vercel.app/",
-      "code_repo_url": "https://github.com/exploratoryprorammer/SmartPantry",
+      "live_url": "https://memoraai.vercel.app/",
+      "code_repo_url": "https://github.com/exploratoryprorammer/AI-flashcards",
       "cover": "/assets/Screenshot 2024-08-26 at 10.33.28 PM.png"
     },
     {
