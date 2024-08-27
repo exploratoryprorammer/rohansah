@@ -49,6 +49,15 @@
   "projects": [
     {
       "id": "1",
+      "title": "Memora",
+      "description": "Developed a prompt-based AI Flashcards app leveraging llama 3.1, OpenAI, and NextJS; utilized clerk for user authentication and Stripe API for payment authentication.",
+      "technologies": ["Next.js", "React", "Firebase", "Llama 3.1", "CI/CD", "MaterialUI", "OpenAI", "Clerk API", "StripeAPI"],
+      "live_url": "https://memora-nu.vercel.app/",
+      "code_repo_url": "https://github.com/exploratoryprorammer/SmartPantry",
+      "cover": "/assets/Screenshot 2024-08-26 at 10.33.28 PM.png"
+    },
+    {
+      "id": "2",
       "title": "NEOs tracker",
       "description": "Developed web app to provide NASA-backed data on real-time asteroids that threaten Earth equipped with a personal A.I. chatbot to enhance user experience.",
       "technologies": ["React", "Next.js", "Llama 3.1", "NASA API","AWS EC2","RAG", "Pinecone"],
@@ -58,22 +67,13 @@
       
     },
     {
-      "id": "2",
+      "id": "3",
       "title": "SmartPantry",
       "description": "Developed an item inventory with an AI image classification feature through Google Gemini Vision API and Firebase storage.",
       "technologies": ["Next.js", "React", "Firebase", "Google Gemini Vision API", "CI/CD", "MaterialUI" ],
       "live_url": "https://smart-pantry-chi.vercel.app",
       "code_repo_url": "https://github.com/exploratoryprorammer/AI-flashcards",
       "cover": "/assets/adobestock-vikivector.jpg"
-    },
-    {
-      "id": "3",
-      "title": "Memora",
-      "description": "Developed a prompt-based AI Flashcards app leveraging llama 3.1, OpenAI, and NextJS; utilized clerk for user authentication and Stripe API for payment authentication.",
-      "technologies": ["Next.js", "React", "Firebase", "Llama 3.1", "CI/CD", "MaterialUI", "OpenAI", "Clerk API", "StripeAPI"],
-      "live_url": "https://memora-nu.vercel.app/",
-      "code_repo_url": "https://github.com/exploratoryprorammer/SmartPantry",
-      "cover": "/assets/Screenshot 2024-08-26 at 10.33.28 PM.png"
     }
   ],
   "workExperience": [
